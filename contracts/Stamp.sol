@@ -109,22 +109,22 @@ contract ERC721Token is ERC721 {
   /**
    * @dev We do not implement this function
    */ 
-  function transfer(address _to, uint256 _tokenId) public { require(false); }
+  function transfer(address _to, uint256 _tokenId) public { }
  
   /**
    * @dev We do not implement this function
    */ 
-  function approve(address _to, uint256 _tokenId) public { require(false); }
+  function approve(address _to, uint256 _tokenId) public { }
  
   /**
    * @dev We do not implement this function
    */ 
-  function takeOwnership(uint256 _tokenId) public { require(false); }
+  function takeOwnership(uint256 _tokenId) public { }
 }
 
 /**
- * @title ERC721Token
- * Generic implementation for the required functionality of the ERC721 standard
+ * @title Stamp
+ * Rubber stamp, minting powers is managed by authority
  */
 contract Stamp is ERC721Token {
 
